@@ -1,0 +1,50 @@
+\begin{minipage}{\linewidth}
+\vspace{1em}
+{\Huge $RECIPE_NAME}
+\addcontentsline{toc}{section}{$RECIPE_NAME}
+\par\noindent\rule{\textwidth}{0.1pt}
+\begin{multicols}{2}
+\noindent
+\raisebox{-6pt}{\includesvg[height=20pt]{kitchen-spoons-icon.svg}}
+\hspace{0.1cm}2 porcje \hspace{0.1cm}
+\raisebox{-6pt}{\includesvg[height=20pt]{clock-line-icon.svg}}
+\hspace{0.1cm}15 min
+\vfill\null
+\columnbreak
+\noindent
+Autorzy: \\ $AUTHORS
+\end{multicols}
+\begin{multicols}{2}
+\noindent
+{\large \textbf{Składniki:}}
+\begin{itemize}[leftmargin=*]
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    $INGREDIENTS
+\end{itemize}
+\vfill\null
+\columnbreak
+{\large \textbf{Sposób przygotowania:}} \vspace{3mm} \\
+$RECIPE
+\end{multicols}
+\begin{table}[H]
+\centering
+\begin{tabular}{ccccc}
+\rowcolor[HTML]{F9A148}
+Węglowodany {[}g{]} & Białko {[}g{]} & Tłuszcze {[}g{]} & kcal/porcje & kcal/100 g \\
+$CARBS              & $PROTEIN       & $FAT             & $KCAL       & $KCAL_PER_100G
+\end{tabular}
+\end{table}
+\FloatBarrier
+\noindent
+{\large \textbf{Uwagi:}} \\
+$NOTES
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=7cm]{img/$IMG_FILENAME}
+    \caption{$IMG_CAPTION.}
+\end{figure}
+\FloatBarrier
+\noindent
+\end{minipage}

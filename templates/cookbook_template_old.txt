@@ -1,0 +1,60 @@
+\documentclass[polish,a4paper]{article}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx} % 
+\usepackage{placeins} % FloatBarrier
+
+\usepackage{multicol} 
+
+\usepackage{hyperref} % clickable Table of Contents
+
+\usepackage{fontspec}
+\setmainfont{Roboto Slab}
+
+\usepackage[table,xcdraw]{xcolor} % table color
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{enumitem}
+
+\usepackage{float} % minipage with figures and tables
+
+\title{Przepiśnik Hawiarskiej Koliby}
+\date{September 2024}
+
+\begin{document}
+\setlength{\tabcolsep}{0.5cm}
+\renewcommand{\arraystretch}{1.5}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+
+\section*{{\Huge Śniadania}}
+\addcontentsline{toc}{section}{Śniadania}
+Rozpoczynając dzień od śniadania dostarczamy  organizmowi energię niezbędną do efektywnego rozpoczęcia dnia. Najlepiej, aby śniadanie stanowiło 25-30 proc. energii całodziennej diety czyli przy diecie 2000 kcal powinno dostarczyć 500-600 kcal (np. 3 łyżki płatków owsianych z orzechami i mlekiem oraz kanapka z wędliną i sałatką z pomidorów i ogórków z sosem winegret). \\
+(To jest jakiś przykład z internetu - docelowo coś innego)
+\\ \noindent
+$BREAKFAST_RECIPES
+\newpage
+\section*{{\Huge Przekąski w ciągu dnia}}
+\addcontentsline{toc}{section}{Przekąski w ciągu dnia}
+
+\subsection*{{\LARGE Orzechy}}
+\addcontentsline{toc}{subsection}{Orzechy}
+Coś o orzechach.
+
+\subsection*{{\LARGE Czekolada}}
+\addcontentsline{toc}{subsection}{Czekolada}
+Coś o czekoladzie.
+\newpage
+\section*{{\Huge Obiady}}
+\addcontentsline{toc}{section}{Obiady}
+Tutaj jakiś tekst o obiedzie...
+\\ \noindent
+$DINER_RECIPES
+
+\end{document}

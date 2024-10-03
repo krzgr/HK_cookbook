@@ -1,0 +1,39 @@
+\begin{minipage}{\linewidth}
+\vspace{1em}
+\subsection*{{\LARGE $RECIPE_NAME}}
+\addcontentsline{toc}{subsection}{$RECIPE_NAME}
+Autor: $AUTHORS
+\begin{multicols}{2}
+\noindent
+{\large \textbf{Składniki:}}
+\begin{itemize}[leftmargin=*]
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    $INGREDIENTS
+\end{itemize}
+\vfill\null
+\columnbreak
+{\large \textbf{Sposób przygotowania:}} \vspace{3mm} \\
+$RECIPE
+\end{multicols}% Table
+\begin{table}[H]
+\centering
+\begin{tabular}{ccccc}
+\rowcolor[HTML]{F9A148} 
+Węglowodany {[}g{]} & Białko {[}g{]} & Tłuszcze {[}g{]} & kcal/porcje & kcal/100 g \\
+$CARBS              & $PROTEIN       & $FAT             & $KCAL       & $KCAL_PER_100G 
+\end{tabular}
+\end{table}
+\FloatBarrier
+\noindent
+{\large \textbf{Uwagi:}} \\
+$NOTES
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=7cm]{img/$IMG_FILENAME}
+    \caption{$IMG_CAPTION.}
+\end{figure}
+\FloatBarrier
+\noindent
+\end{minipage}
