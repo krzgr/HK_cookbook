@@ -1,0 +1,76 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "recipe_name": {
+        "type": "string"
+      },
+      "authors": {
+        "type": "string"
+      },
+      "ingredients": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1
+      },
+      "preparation": {
+        "type": "string"
+      },
+      "notes": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string",
+        "enum": ["breakfast", "snack", "dinner"]
+      },
+      "carbs": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "protein": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "fats": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "kcal": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "kcal_per_100g": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "servings": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 4
+      },
+      "preparation_time": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "required": [
+      "recipe_name",
+      "authors",
+      "ingredients",
+      "preparation",
+      "servings",
+      "preparation_time",
+      "notes",
+      "type",
+      "carbs",
+      "protein",
+      "fats",
+      "kcal",
+      "kcal_per_100g"
+    ]
+  },
+  "minItems": 0
+}
